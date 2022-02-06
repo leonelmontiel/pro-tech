@@ -6,6 +6,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
     color: ghostwhite;
+	background-color: #00008b;
 }
 
 .grid {
@@ -139,7 +140,7 @@ body {
 }
 
 .portada {
-    grid-row: 2/8;
+    grid-row: 2/7;
 
     display: flex;
     justify-content: center;
