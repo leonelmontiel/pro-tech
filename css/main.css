@@ -19,7 +19,7 @@ body {
 
 .header {
     color: ghostwhite;
-    position: sticky;
+    position: sticky; /* para mobile tiene que ser fixed */
     top: 0;
     z-index: 20;
     box-shadow: 0px 1px 3px black;
