@@ -2,9 +2,12 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=.9, shrink-to-fit=no">
+        <title>Pro•Tech | Servicio Técnico PC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <link rel="icon" href="iconos/logo-solo.png">
 
         <script src="https://kit.fontawesome.com/c926e0f0fa.js" crossorigin="anonymous"></script>
     </head>
@@ -12,23 +15,38 @@
         <div class="grid">
             <header class="header">
                 <ul class="nav-contact">
-                    <li class="nav-contact-item"><a href="mailto:profetechnologypc@gmail.com" class="nav-link">
+                    <li class="nav-contact-item no-desbordar"><a href="mailto:profetechnologypc@gmail.com" class="nav-link-contact">
                         <button class="nav-toggle"><i class="fas fa-envelope"></i></button>profetechnologypc@gmail.com</a></li>                    
-                    <li class="nav-contact-item"><a href="https://api.whatsapp.com/send?phone=541154964215&text=" class="nav-link">
+                    <li class="nav-contact-item no-desbordar"><a href="https://api.whatsapp.com/send?phone=541154964215&text=" class="nav-link-contact">
                         <button class="nav-toggle"><i class="fab fa-whatsapp"></i></button>11-5496-4215</a></li>
-                    <li class="nav-contact-item">
+                    <li class="nav-contact-item no-desbordar">
                         <button class="nav-toggle"><i class="fas fa-map-marker-alt"></i></button>Quilmes, Bs. As., Argentina</li>
                 </ul>
-                <nav class="nav">
-                    <div><a href="index.html"><img src="iconos/logo.ico" class="logo" alt="Main Logo"></a></div>
+                <div class="nav-container">
+                    <div class="logo-container"><a href="index.html"><img src="iconos/logo.png" class="logo" alt="Main Logo"></a></div>
                     <div class="buscar">
                         <input type="text" placeholder="Buscar" required>
                         <div class="btn">
                             <i class="fa fa-search"></i>
                         </div>
                     </div>
-                    <div>MENU</div>
-                </nav>
+                    <div class="nav-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#" id="selected"></a></li>                    
+                                <li><a href="#">Servicios</a>
+                                    <ul>
+                                        <li><a href="#">Mantenimientos</a></li>                    
+                                        <li><a href="#">Instalaciones</a></li>
+                                        <li><a href="#">Combos</a></li>
+                                        <li><a href="#">Armado de PC</a></li>
+                                    </ul></li>
+                                <li><a href="#">Nosotros</a></li>
+                            </ul>
+                        </nav>
+                        
+                    </div>                    
+                </div>
             </header>
             
             <div class="portada portada-img">
