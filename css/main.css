@@ -327,7 +327,7 @@ nav ul li ul li a:hover {
 /* ------- MEDIA QUERYS ------- */
 
 @media screen and (max-width: 768px), (max-width: 600px) {
-    .header, .portada, .slider {
+    .portada, .slider {
         text-align: center;
     }
 
