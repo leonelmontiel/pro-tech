@@ -323,3 +323,15 @@ nav ul li ul li a:hover {
         background-position: top right;
     }
 }
+
+/* ------- MEDIA QUERYS ------- */
+
+@media screen and (max-width: 768px), (max-width: 600px) {
+    .header, .portada, .slider {
+        text-align: center;
+    }
+
+    .slider {
+        grid-column: 1/-1;
+    }
+}
