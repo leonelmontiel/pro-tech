@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Pro•Tech | Servicio Técnico PC</title>
+        <title>Pro•Tech | Servicio Técnico de PC</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -13,60 +13,80 @@
     </head>
     <body>
         <div class="grid">
-            <header class="header">
-                <ul class="nav-contact">
-                    <li class="nav-contact-item no-desbordar"><a href="mailto:profetechnologypc@gmail.com" class="nav-link-contact">
-                        <button class="nav-toggle"><i class="fas fa-envelope"></i></button>profetechnologypc@gmail.com</a></li>                    
-                    <li class="nav-contact-item no-desbordar"><a href="https://api.whatsapp.com/send?phone=541154964215&text=" class="nav-link-contact">
-                        <button class="nav-toggle"><i class="fab fa-whatsapp"></i></button>11-5496-4215</a></li>
-                    <li class="nav-contact-item no-desbordar">
-                        <button class="nav-toggle"><i class="fas fa-map-marker-alt"></i></button>Quilmes, Bs. As., Argentina</li>
-                </ul>
-                <div class="nav-container">
-                    <div class="logo-container"><a href="index.html"><img src="iconos/logo.png" class="logo" alt="Main Logo"></a></div>
-                    <div class="buscar">
-                        <input type="text" placeholder="Buscar" required>
-                        <div class="btn">
-                            <i class="fa fa-search"></i>
+            <header>
+                <div class="nav-contact-box">
+                    <ul class="nav-contact">
+                        <li class="nav-contact-item no-desbordable"><a href="mailto:profetechnologypc@gmail.com" class="nav-contact-link">
+                            <button class="nav-toggle"><i class="fas fa-envelope"></i></button>profetechnologypc@gmail.com</a></li>                    
+                        <li class="nav-contact-item no-desbordable"><a href="https://api.whatsapp.com/send?phone=541154964215&text=" class="nav-contact-link">
+                            <button class="nav-toggle"><i class="fab fa-whatsapp"></i></button>11-5496-4215</a></li>
+                        <li class="nav-contact-item no-desbordable">
+                            <button class="nav-toggle"><i class="fas fa-map-marker-alt"></i></button>Quilmes, Bs. As., Argentina</li>
+                    </ul>
+                </div>
+                <div class="nav-menu-box">
+                    <div class="nav-menu-container no-desbordable">
+                        <div><a href="index.html"><img src="iconos/logo.png" class="logo" alt="Main Logo"></a></div>
+                        <div class="buscar">
+                            <input type="text" placeholder="Buscar" required>
+                            <div class="btn">
+                                <i class="fa fa-search"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="nav-menu">
-                        <nav>
-                            <ul>
-                                <li><a href="#" id="selected"></a></li>                    
-                                <li><a href="#">Servicios</a>
-                                    <ul>
-                                        <li><a href="#">Mantenimientos</a></li>                    
-                                        <li><a href="#">Instalaciones</a></li>
-                                        <li><a href="#">Combos</a></li>
-                                        <li><a href="#">Armado de PC</a></li>
+                        <nav class="nav-menu">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#" id="selected" class="menu-item-link"></a></li>                    
+                                <li class="menu-item"><a href="#" class="menu-item-link">Servicios</a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item"><a href="#" class="submenu-item-link">Mantenimientos</a>
+                                            <ul class="submenu-2">
+                                                <li><a href="#" class="submenu-item-link-2">de Sistema</a></li>                    
+                                                <li><a href="#" class="submenu-item-link-2">de Componentes</a></li>
+                                            </ul></li>
+                                        </li>                    
+                                        <li class="submenu-item" id="submenu-item-inst"><a href="#" class="submenu-item-link">Instalaciones</a>
+                                            <ul class="submenu-2">
+                                                <li class="submenu-item-2"><a href="#" class="submenu-item-link-2">de Sistema</a>
+                                                    <ul class="submenu-3">
+                                                        <li><a href="#" class="submenu-item-link-3">con Backup</a></li>                    
+                                                        <li><a href="#" class="submenu-item-link-3">sin Backup</a></li>
+                                                    </ul></li>
+                                                </li>                    
+                                                <li><a href="#" class="submenu-item-link-2">de Programas</a></li>
+                                            </ul></li>
+                                        </li>
+                                        <li class="submenu-item" id="submenu-item-combos"><a href="#" class="submenu-item-link">Combos</a>
+                                            <ul class="submenu-2" id="submenu-2">
+                                                <li><a href="#" class="submenu-item-link-2 no-desbordable">Formateo + Backup + Mantenimiento</a></li>                    
+                                                <li><a href="#" class="submenu-item-link-2 no-desbordable">Mantenimiento Integral</a></li>
+                                            </ul></li>
+                                        </li>
+                                        <li class="submenu-item" id="submenu-item-arm"><a href="#" class="submenu-item-link">Armados de PC</a>
+                                            <ul class="submenu-2" id="submenu-2">
+                                                <li><a href="#" class="submenu-item-link-2">Armado Completo</a></li>                    
+                                                <li><a href="#" class="submenu-item-link-2 no-desbordable">Actualización de Componentes</a></li>
+                                            </ul></li>
+                                        </li>
                                     </ul></li>
-                                <li><a href="#">Nosotros</a></li>
-                            </ul>
+                                <li class="menu-item"><a href="#" class="menu-item-link">Nosotros</a></li>
+                            </ul>                            
                         </nav>
-                        
-                    </div>                    
+                    </div>
                 </div>
             </header>
-            
-            <div class="portada portada-img">
-                <div class="capa-gradiente"></div>
-                <div class="portada-detalles">
-                    <h2>Servicio técnico de computadoras</h2><br>
-                    <p><b>Somos un emprendimiento dedicado al soporte informático,
-                    con las tarifas de las más económicas en Quilmes y alrededores.</b><br>
-                    Ofrecemos una gran variedad de servicios, entre los cuales
-                    se destacan: limpieza de componentes, optimización de Windows, instalación
-                    de sistemas operativos y programas, presupuestos y armados de
-                    computadoras.</p>
+
+            <main>
+                <div class="portada-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptate vitae laborum voluptates ullam voluptatibus voluptas obcaecati debitis maiores eos sed ipsum quae, exercitationem harum quisquam fugit accusamus blanditiis mollitia quam beatae quidem libero. Architecto, mollitia ea in, nostrum sit modi voluptatum eum odio repellendus est vero vitae, doloribus error a laboriosam impedit excepturi recusandae aliquam deleniti veniam itaque ullam? Vero iure veritatis eum hic omnis dolor natus molestiae vel. Amet rerum asperiores voluptatum, velit tempora mollitia culpa fugit, libero consequatur ipsa, aliquam voluptatem. Quasi, doloribus. Quae, dolor sit. Fugiat, expedita ratione tempora quia consectetur inventore magnam cupiditate unde itaque facere, id nam est ducimus quaerat repellendus aperiam dolores nostrum! Ab quo provident, qui modi necessitatibus laudantium fugit quia praesentium optio maxime accusamus voluptatum sit tempore consectetur neque eaque autem animi assumenda. Ipsum fuga veniam animi optio deleniti, similique enim dicta sint fugiat neque commodi vero aliquid saepe soluta veritatis? Cumque blanditiis expedita eligendi ex voluptatibus. Alias atque a quam facilis voluptatem hic esse cumque quo perferendis necessitatibus autem doloribus architecto, ex non et? Explicabo exercitationem iure est, tempore earum repudiandae nesciunt velit? Veritatis id pariatur unde beatae nostrum! Nemo ea laboriosam explicabo? Vero minus sapiente explicabo ducimus veritatis impedit voluptatibus fugit dignissimos tenetur doloremque recusandae laboriosam nihil neque, aliquid quibusdam cumque nostrum voluptates iure ab magni! Praesentium quae neque aut molestiae nulla reprehenderit, est accusantium! Tempora nisi id alias provident ex voluptatum magnam sapiente vero cumque at. Fugit mollitia consectetur excepturi delectus error ut. Fuga voluptatem ea eos sit dolorem enim impedit sequi dolorum beatae voluptatum tempora non doloremque nihil earum dolore, soluta quis culpa odit sapiente saepe harum! Architecto, nisi? Temporibus, exercitationem cumque, molestias ad ullam nesciunt quos eaque atque expedita ab laboriosam aliquam, quibusdam nostrum distinctio vel aut velit? Esse veritatis voluptate repellendus, omnis maiores sed hic illum modi ea quia perferendis eveniet, aliquam similique dolor autem quisquam libero alias dolores mollitia nostrum laudantium ex. Quod modi aliquam veritatis ipsa saepe mollitia dolorum, magni, assumenda nemo magnam tenetur cupiditate! Impedit iste veritatis voluptatem, debitis dolores, praesentium aspernatur maiores deleniti culpa ullam omnis cum labore recusandae similique quam molestiae saepe sed sunt, quas aliquam earum. Amet veritatis pariatur vero provident consequatur optio dolorum nihil hic omnis tempore ipsa sunt quas fugit aliquam maxime, sapiente laboriosam est eius, magni dolor? Dignissimos, error sed id ullam distinctio minus nesciunt molestias quaerat? Vitae aspernatur omnis provident, ex facere debitis aut iste, labore dolor vero quas qui amet officiis impedit, eos quasi officia veritatis dolores corporis sapiente suscipit. Corrupti mollitia eum veniam accusantium ex suscipit deserunt id sit voluptate molestiae aut cupiditate voluptatem voluptatibus accusamus incidunt dolores eveniet, ipsam tempore quo, quasi facilis animi ipsa delectus. Necessitatibus accusamus repellendus dolores sed possimus molestiae, provident assumenda corporis vero saepe iusto ipsa in nam quidem? Impedit eligendi facere iusto velit nam nemo sint nesciunt illo nostrum, suscipit, architecto non ut quo animi qui quas hic dignissimos nulla. Reiciendis mollitia alias dolorem dolore minima vero velit, obcaecati, assumenda sunt soluta dignissimos itaque animi nam minus, error voluptatem doloribus numquam. Illo perferendis voluptates unde quisquam modi cum nisi illum, recusandae maxime aspernatur ipsum quae labore enim laudantium nulla iusto. Debitis tenetur delectus distinctio non ipsam modi sunt et! Nam totam debitis dolore tempore facilis culpa est impedit ducimus deserunt eligendi, quae nihil voluptatum accusamus nulla modi optio. Nihil voluptatem aliquam, dolores adipisci odio quam est magni nam veritatis earum repellendus quos illum consequatur ducimus fuga itaque molestiae beatae placeat hic corrupti! Voluptatibus at praesentium pariatur consectetur vero, fugiat, repudiandae tenetur sequi cumque numquam nemo suscipit earum quos iure placeat sunt nulla eveniet quasi facere ea illo? Voluptatem beatae nesciunt nemo, ducimus maiores optio velit quasi ad ipsam nam labore obcaecati iusto delectus! Unde illum eaque autem debitis quo id. Quidem molestiae deserunt officia aperiam cum! Dicta maiores odio accusantium nesciunt doloribus reprehenderit tempore quia, dolorum sunt. Magnam temporibus illum mollitia et vero inventore itaque, quasi fuga omnis! Necessitatibus inventore, quidem ipsum illo expedita eveniet magnam voluptate deleniti hic nemo cumque praesentium sapiente suscipit animi delectus culpa corrupti! Modi labore quibusdam veritatis aliquid, quasi deleniti asperiores ex autem nemo, facilis quis, soluta culpa inventore eius iusto odit dolore totam corporis nesciunt. Neque minima eos cum expedita. Consequatur eveniet, rem quae sint nemo, doloribus ducimus iure est sapiente amet eos optio aliquam ad quia qui aliquid molestiae laborum pariatur ipsam omnis nihil. Nisi saepe quas perferendis excepturi eveniet? Suscipit accusamus optio voluptatem eum ut illum voluptate velit ex dolorem aperiam sint, doloribus voluptatum, necessitatibus eius vero, atque debitis placeat cum ipsum ad quisquam qui ratione excepturi! Cumque unde repudiandae eius eveniet nemo quis repellat. Quasi, dolor. Vitae, sint dolor. Sunt tenetur, ut nesciunt consectetur veniam porro quibusdam ipsum nisi quo hic vero molestiae delectus ad tempora omnis repellendus praesentium eos quod ratione eligendi? Ratione explicabo, magni id perferendis dolorum illo nihil excepturi fugit incidunt, perspiciatis consectetur molestiae tenetur facere. Voluptatibus ratione quam in? Voluptatum vel dolorem officia ratione aliquid, maiores numquam maxime! Eius est ducimus nihil quas delectus dolorum eaque, laudantium aperiam officia porro sunt suscipit numquam aliquid. Iste quis nemo neque commodi sapiente dolores quos omnis saepe voluptates repellendus! Eius quo sapiente, corporis minus iusto eveniet enim nobis, accusamus provident totam blanditiis natus? Eos laudantium sed blanditiis architecto perspiciatis adipisci voluptatem facere impedit molestias harum quo, ipsa maiores. Minima porro optio mollitia, laboriosam iste, ullam qui sint aliquam, asperiores vel consectetur commodi nisi sed adipisci neque illo! Harum eveniet delectus dolorem corrupti nobis voluptates! Accusantium consequatur architecto minus maxime error voluptates nihil omnis labore quasi est dignissimos, perspiciatis debitis dolores enim alias eius cupiditate quod vel illum delectus! Magnam voluptates fugiat inventore esse rem laboriosam iusto recusandae accusantium qui odit dolores minus tempore, similique earum molestias ab est dolorum iste quisquam autem vero cupiditate. Quo est unde quaerat et quibusdam obcaecati velit rem doloribus inventore incidunt in soluta maiores repudiandae non illo fugit excepturi laborum ratione atque corporis impedit perferendis, eveniet error nulla. Porro suscipit qui eligendi. Deleniti rem in omnis nesciunt nisi ex aperiam optio eum.</div>
+                <div class="publicaciones-box">
+                    <article></article>
+                    <article></article>
+                    <article></article>
                 </div>
-            </div>
-            <div class="slider">
-                <div>BLOQUE</div>
-                <div>BLOQUE</div>
-                <div>BLOQUE</div>
-            </div>
-            <div>Magni voluptatum dignissimos molestiae, deserunt, accusantium soluta quisquam rem aspernatur voluptates vitae sit. Facilis eum mollitia magni! Perspiciatis, facere similique?</div>
+            </main>
+
+            <footer>
+                <div class="footer-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint at tenetur fugiat minima aliquam nobis dolorem id maxime quasi porro, cumque, unde error dolor labore atque. Delectus sit voluptas quis magni temporibus ea, natus nisi recusandae repudiandae dolore voluptate nulla, velit laborum! Tempora obcaecati laboriosam veritatis numquam incidunt mollitia, quos libero deserunt cumque similique vitae, consectetur nostrum ab fuga! Unde, quam exercitationem? Est aliquam doloribus corrupti quibusdam reprehenderit, vero architecto mollitia molestias a soluta tempora, labore fugit aspernatur cupiditate voluptatum. Eum commodi nemo, accusantium consequuntur nisi deserunt beatae, facere expedita atque doloribus, modi aperiam veniam neque accusamus provident. Eligendi, culpa.</div>
+            </footer>
         </div>
     </body>
 </html>
