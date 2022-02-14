@@ -341,7 +341,7 @@ main {
 }
 
 .carousel__contenedor {
-    position: relative;    
+    position: relative;
 }
 
 .carousel__elemento {
@@ -354,14 +354,19 @@ main {
     display: block;
     width: 30px;
     height: 30px;
-    background: none;
-    color: #cf1104;
+    background: #cf1104;
+    color: white;
     border: none;
-    top: calc(50% - 50px);
+    top: 50%;
     cursor: pointer;
     line-height: 30px;
     text-align: center;
     opacity: 70%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+    opacity: 100%;
 }
 
 .carousel__anterior {
@@ -373,14 +378,26 @@ main {
 
 .carousel img {
     width: 100%;
-    height: 325px;
+    height: 45%;
     object-fit: cover;
     box-shadow: 0px 0px 15px black;
 }
 
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-    opacity: 100%;
+.carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #cf1104;
+    opacity: 2;
+    border-radius: 0%;
+}
+
+.carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+    opacity: .5;
 }
 
 /* ------- KEYFRAMES ------- */
@@ -395,8 +412,16 @@ main {
 
 /* ------- MEDIA QUERYS ------- */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
     body {
+        padding: 40px 0;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main > * {
         width: 100%;
     }
 }
