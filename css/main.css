@@ -2,15 +2,9 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.grid > header,
-.grid > main,
-.grid > footer {
-    border: 2px solid black;
-}
-
-.grid {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+body {
+    background-color: darkblue;
+    color: white;
 }
 
 .no-desbordable {
@@ -22,11 +16,14 @@
 /* ------- HEADER ------- */
 
 header {
+    top: 0;
     display: grid;
     grid-template-rows: 25px 75px;
     color: white;
     position: fixed;
     width: 100%;
+    box-shadow: 0px 0px 3px black;
+    z-index: 20;
 }
 
 /* ----- NAV-CONTACT ----- */
@@ -42,6 +39,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin: 0;
+    padding: 0;
 }
 
 .nav-contact-link {
@@ -85,7 +83,7 @@ header {
 /* --- LOGO --- */
 
 .logo {
-    width: 100px;
+    width: 50%;
     vertical-align: middle;
 }
 
@@ -114,7 +112,7 @@ header {
 .btn {
     right: -5px;
     position: absolute;
-    background: #cf1104;
+    background: hsl(4, 96%, 41%);
     width: 50px;
     height: 50px;
     font-size: 20px;
@@ -139,9 +137,8 @@ header {
 
 /* --- MENU --- */
 
-.nav-menu {
-    height: 75px;
-    height: 400px;
+.nav-menu:hover {
+    min-height: 350px;
 }
 
 .menu {
@@ -164,13 +161,13 @@ header {
 
 .menu-item-link:hover {
     transform: scale(1.1);
-    background: rgba(167, 11, 0);
+    background: rgba(167, 11, 0, 0.9);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 #selected {
     transform: scale(1.1);
-    background-color: rgba(167, 11, 0);
+    background-color: rgba(167, 11, 0, 0.9);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -189,13 +186,13 @@ header {
     width: 180px;
     display: flex;
     flex-direction: column;
-    background: rgba(167, 11, 0);
+    background: rgba(167, 11, 0, 0.9);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     position: absolute;
     padding: 4px 0px;
     visibility: hidden;
     opacity: 0;
-    z-index: 10;
+    z-index: 100;
     transition: all 300ms ease;
     top: 150px;
     left: -5px;
@@ -204,7 +201,7 @@ header {
 
 .submenu-2, .submenu-3 {
     left: -180px;
-    background: #00008b;
+    background: rgb(0, 0, 139, 0.7);
 }
 
 #submenu-2 {
@@ -248,7 +245,7 @@ header {
     position: absolute;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 12px solid rgba(167, 11, 0);
+    border-bottom: 12px solid rgba(167, 11, 0, 0.9);
     top: -12px;
     left: 20px;
 }
@@ -270,7 +267,7 @@ header {
 .submenu-item-link:hover,
 .submenu-item-link-2:hover,
 .submenu-item-link-3:hover {
-    background: #00008b;
+    background: rgb(0, 0, 139);
     transform: scale(1.1);
     padding-left: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -285,4 +282,121 @@ header {
 
 main {
     margin-top: 100px;
+    height: auto;   
+}
+
+.capa-gradiente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(312deg, rgba(0,0,128,0.5018382352941176) 65%, rgba(207,17,4,1) 100%);
+}
+
+.portada {    
+    display: flex;
+
+    box-shadow: 0px 0px 3px black;
+    z-index: -10; /*para que se vea el menu desplegable */
+}
+
+.portada-img {
+    background-image: url(../img/portada.jpg);
+    position: relative;
+
+    animation: movimiento 20s infinite linear alternate;
+}
+
+.portada-detalles {
+    padding: 100px;
+    text-shadow: 1px 1px 3px black;
+    
+    z-index: 10;
+    margin: auto;
+
+    max-width: 65%;
+}
+
+.portada-detalles > h2 {
+    color: #cf1104;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.portada-detalles > p {
+    color: ghostwhite;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* --- CAROUSEL --- */
+
+.carousel {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.carousel_lista {
+    overflow: hidden;    
+}
+
+.carousel__contenedor {
+    position: relative;    
+}
+
+.carousel__elemento {
+    margin: 10px;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: none;
+    color: #cf1104;
+    border: none;
+    top: calc(50% - 50px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    opacity: 70%;
+}
+
+.carousel__anterior {
+    left: -30px;
+}
+.carousel__siguiente {
+    right: -30px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px black;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+    opacity: 100%;
+}
+
+/* ------- KEYFRAMES ------- */
+
+@keyframes movimiento {
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+/* ------- MEDIA QUERYS ------- */
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
 }
