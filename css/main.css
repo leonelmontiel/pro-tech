@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: darkblue;
+    background-color: #00008b;
     color: white;
 }
 
@@ -357,7 +357,7 @@ main {
     background: #cf1104;
     color: white;
     border: none;
-    top: 50%;
+    top: 25%;
     cursor: pointer;
     line-height: 30px;
     text-align: center;
@@ -398,6 +398,12 @@ main {
 
 .carousel__indicadores .glider-dot.active {
     opacity: .5;
+}
+
+/* --- INSTAGRAM --- */
+
+.ig__lista {
+    text-align: center;
 }
 
 /* ------- KEYFRAMES ------- */
