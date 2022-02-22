@@ -324,7 +324,7 @@ main {
 .card-box {
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 2em;
     flex-wrap: wrap;
     max-width: 80%;
     margin: 0 auto;    
@@ -345,7 +345,7 @@ main {
 }
 
 .card__content p {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .card__content > h3 {
@@ -360,6 +360,27 @@ main {
     width: 75px;
     height: 75px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn__dir:hover {
+    color: magenta;
+}
+
+#btn__wsp:hover {
+    color: lightgreen;
+}
+
+#btn__email:hover {
+    color: gold;
+}
+
+#btn__fb:hover {
+    color: dodgerblue;
+}
+
+#btn__ig:hover {
+    color: tomato;
 }
 
 /* ----- FOOTER ----- */
@@ -397,9 +418,5 @@ main {
 
     .main {
         flex-direction: column;
-    }
-
-    .main > * {
-        width: 100%;
     }
 }
