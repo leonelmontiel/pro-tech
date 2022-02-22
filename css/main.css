@@ -17,8 +17,6 @@ body {
 
 header {
     top: 0;
-    display: grid;
-    grid-template-rows: 25px 75px;
     color: white;
     position: fixed;
     width: 100%;
@@ -26,73 +24,40 @@ header {
     z-index: 20;
 }
 
-/* ----- NAV-CONTACT ----- */
-
-.nav-contact-box {
-    background-color: #364bbe;
-    line-height: 25px;
-}
-
-.nav-contact {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-contact-link {
-    text-decoration: none;
-    color: white;
-    transition: all 0.5s ease;
-    padding: 10px;
-}
-
-.nav-contact-item {
-    font-size: 15px;
-    min-width: fit-content;
-}
+/* ----- NAV-MENU ----- */
 
 .nav-toggle {
     background: none;
     color: white;
     border: none;
+    cursor: pointer;
 }
-
-.nav-contact-link:hover {
-    transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.233);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-/* ----- NAV-MENU ----- */
 
 .nav-menu-box {
     background-color: darkblue;
-    line-height: 75px;
+    line-height: 70px;
 }
 
 .nav-menu-container {
     display: flex;
-    justify-content: space-between;
-    margin: 0 30px;
+    justify-content: space-around;
+    overflow: visible;
 }
 
 
 /* --- LOGO --- */
 
 .logo {
-    width: 50%;
+    width: 100px;
     vertical-align: middle;
 }
 
 /* --- BUSCAR --- */
-
+/*
 .buscar {
     height: 75px;
     position: relative; /*puse relative para que al expandirse el bucador
-    no se superponga con los otros elementos*/
+    no se superponga con los otros elementos
     display: flex;
     align-items: center;
 }
@@ -120,7 +85,7 @@ header {
     border-radius: 50%;
     cursor: pointer;
     
-    /* para el logito de la lupa */
+    /* para el logito de la lupa
     display: flex;
     justify-content: center;
 }
@@ -133,13 +98,9 @@ header {
 .buscar:hover input, .buscar input:focus {
     width: 240px;
     opacity: 1;
-}
+}*/
 
 /* --- MENU --- */
-
-.nav-menu:hover {
-    min-height: 350px;
-}
 
 .menu {
     display: flex;
@@ -150,6 +111,7 @@ header {
 .menu-item {
     list-style: none;
     position: relative;
+    font-weight: bold;
 }
 
 .menu-item-link {
@@ -169,6 +131,10 @@ header {
     transform: scale(1.1);
     background-color: rgba(167, 11, 0, 0.9);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#selected:hover {
+    background-color: #cf1104;
 }
 
 .menu-item:first-child > .menu-item-link {
@@ -192,7 +158,6 @@ header {
     padding: 4px 0px;
     visibility: hidden;
     opacity: 0;
-    z-index: 100;
     transition: all 300ms ease;
     top: 150px;
     left: -5px;
@@ -200,13 +165,13 @@ header {
 }
 
 .submenu-2, .submenu-3 {
-    left: -180px;
+    width: auto;
+    left: 180px;
     background: rgb(0, 0, 139, 0.7);
 }
 
-#submenu-2 {
-    width: 250px;
-    left: -250px;
+.submenu-3 {
+    left: 120px;
 }
 
 .menu-item:hover .submenu,
@@ -262,6 +227,7 @@ header {
     transition: all 300ms ease;
     height: 15px;
     line-height: 15px;
+    font-size: 15px;
 }
 
 .submenu-item-link:hover,
@@ -281,8 +247,8 @@ header {
 /* ----- MAIN ----- */
 
 main {
-    margin-top: 100px;
-    height: auto;   
+    margin-top: 70px;
+    height: auto;  
 }
 
 .capa-gradiente{
@@ -302,6 +268,7 @@ main {
 .portada-img {
     background-image: url(../img/portada.jpg);
     position: relative;
+    height: 650px;
 
     animation: movimiento 20s infinite linear alternate;
 }
@@ -318,7 +285,7 @@ main {
 
 .portada-detalles > h2 {
     color: #cf1104;
-    font-size: 2.5em;
+    font-size: 3em;
     text-transform: uppercase;
     text-align: center;
 }
@@ -329,82 +296,86 @@ main {
     font-size: 1.5em;
 }
 
-/* --- CAROUSEL --- */
-
-.carousel {
-    width: 80%;
-    margin: 50px auto;
-}
-
-.carousel_lista {
-    overflow: hidden;    
-}
-
-.carousel__contenedor {
-    position: relative;
-}
-
-.carousel__elemento {
-    margin: 10px;
-}
-
-.carousel__anterior,
-.carousel__siguiente {
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 30px;
-    background: #cf1104;
-    color: white;
-    border: none;
-    top: 25%;
-    cursor: pointer;
-    line-height: 30px;
-    text-align: center;
-    opacity: 70%;
-}
-
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-    opacity: 100%;
-}
-
-.carousel__anterior {
-    left: -30px;
-}
-.carousel__siguiente {
-    right: -30px;
-}
-
-.carousel img {
-    width: 100%;
-    height: 45%;
-    object-fit: cover;
-    box-shadow: 0px 0px 15px black;
-}
-
-.carousel__indicadores .glider-dot {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background-color: #cf1104;
-    opacity: 2;
-    border-radius: 0%;
-}
-
-.carousel__indicadores .glider-dot:hover {
-    opacity: .5;
-}
-
-.carousel__indicadores .glider-dot.active {
-    opacity: .5;
-}
-
 /* --- INSTAGRAM --- */
+
+.carousel_ig {
+    padding: 50px; 
+}
+
+.carousel_ig > h2, .contact-box > h2 {    
+    text-align: center;
+    margin: 20px 50px;
+    font-size: 2.5em;
+    font-weight: 100;
+}
 
 .ig__lista {
     text-align: center;
 }
+
+/* --- CONTACTO --- */
+
+.contact-box {
+    background-color: #cf1104;
+    height: auto;
+    padding: 50px;
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;    
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 45vh;
+    height: 35vh;
+    color: black;
+    text-align: center;
+    display: table;
+}
+
+.card__content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card__content > h3 {
+    color: #8b8b8b
+}
+
+.contact-toggle {
+    background: none;
+    color: #8b8b8b;
+    border: solid #b6b6b6;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+/* ----- FOOTER ----- */
+
+.footer__box {
+    background-color: rgb(39, 39, 39);
+    font-size: 0.9em;
+    padding: 20px 0;
+}
+
+.footer__descr {
+    display: flex;
+    justify-content: space-around;
+}
+
+#descr__footer {
+    max-width: 30%;
+    text-align: center;
+}
+
 
 /* ------- KEYFRAMES ------- */
 
@@ -419,9 +390,6 @@ main {
 /* ------- MEDIA QUERYS ------- */
 
 @media screen and (max-width: 800px) {
-    body {
-        padding: 40px 0;
-    }
 
     .main {
         flex-direction: column;
