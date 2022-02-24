@@ -60,6 +60,39 @@
     display: none;
 }
 
+/* ---- CARD ---- */
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;    
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 50vh;
+    height: 40vh;
+    color: black;
+    text-align: center;
+    display: table;
+}
+
+.card__content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card__content p {
+    padding: 0 20px;
+}
+
+.card__content > h3 {
+    color: #8b8b8b
+}
+
 /* --- CARRUSEL SERVICIOS --- */
 
 .carousel__servicios {
@@ -69,8 +102,7 @@
 }
 
 .carousel__servicios .card-box {
-    flex-wrap: nowrap;  
-    width: 80%; 
+    flex-wrap: nowrap;   
 }
 
 .carousel__servicios .fondo {
@@ -124,36 +156,15 @@
     box-sizing: border-box;
 }
 
-.card-box {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;    
+.contact-box .card-box {
+    gap: 1em;
+    max-width: 100%; 
 }
 
-.card {
+.contact-box .card {
     background-color: whitesmoke;
-    width: 30vh;
-    height: 30vh;
-    color: black;
-    text-align: center;
-    display: table;
-}
-
-.card__content {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 0.9em;
-}
-
-.card__content p {
-    padding: 0 20px;
-}
-
-.card__content > h3 {
-    color: #8b8b8b
+    width: 35vh;
+    height: 35vh;
 }
 
 .contact-box > h2 {
@@ -211,6 +222,23 @@
 
 /* ----- NEDIA QUERYS ----- */
 
+@media screen and (min-width: 769px) and (max-width: 1200px) and (orientation: landscape){
+    
+    .contact-box .card {
+        width: 30vh;
+        height: auto;
+    }
+
+    .card__content {
+        font-size: 0.8em;
+    }
+
+    .contact-toggle {
+        width: 65px;
+        height: 65px;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .portada-img {
@@ -255,7 +283,7 @@
 
 }
 
-@media screen and (max-width: 286px) {
+@media screen and (max-width: 480px) {
     .portada-detalles h2 {
         font-size: 1.3em;
     }
