@@ -16,7 +16,7 @@
 
  .portada-img {
     background-image: url(../img/portada.jpg);
-    height: 86vh;
+    height: calc(100vh - 75px);
     position: relative;
 
     animation: movimiento__portada 20s infinite linear alternate;
@@ -241,10 +241,6 @@
 
 @media screen and (max-width: 768px) {
 
-    .portada-img {
-        height: calc(100vh - 75px);
-    }
-
     .portada-detalles {
         text-align: center;
         padding: 10%;
@@ -292,7 +288,7 @@
         font-size: 1.2em;
     }
 
-    .carousel__ig h2, .carousel__serviciosh2, .contact-box h2 {
+    .carousel__ig h2, .carousel__servicios h2, .contact-box h2 {
         font-size: 1.7em;
     }
 }
