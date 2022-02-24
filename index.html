@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pro•Tech | Servicio Técnico de PC</title>
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
         <link rel="icon" href="iconos/logo-solo.png">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
 
         <script src="https://kit.fontawesome.com/59f3642a62.js" crossorigin="anonymous"></script>
+        <script src="js/app.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
     <body>        
             <header>
-                <div class="nav-menu-box">
-                    <div class="nav-menu-container no-desbordable">
-                        <div><a href="index.html"><img src="iconos/logo.png" class="logo" alt="Main Logo"></a></div>
-                        <!--<div class="buscar">
-                            <input type="text" placeholder="Buscar" required>
-                            <div class="btn">
-                                <i class="fa fa-search"></i>
-                            </div>-->
-                        <nav class="nav-menu">
-                            <ul class="menu">
-                                <li class="menu-item"><a href="#" id="selected" class="menu-item-link"></a></li>                    
-                                <li class="menu-item"><a href="#" class="menu-item-link">Servicios</a>
-                                    <ul class="submenu">
-                                        <li class="submenu-item"><a href="#" class="submenu-item-link">Mantenimientos</a>
-                                            <ul class="submenu-2">
-                                                <li><a href="#" class="submenu-item-link-2">de Sistema</a></li>                    
-                                                <li><a href="#" class="submenu-item-link-2">de Componentes</a></li>
-                                            </ul></li>
-                                        </li>                    
-                                        <li class="submenu-item" id="submenu-item-inst"><a href="#" class="submenu-item-link">Instalaciones</a>
-                                            <ul class="submenu-2">
-                                                <li class="submenu-item-2"><a href="#" class="submenu-item-link-2">de Sistema</a>
-                                                    <ul class="submenu-3">
-                                                        <li><a href="#" class="submenu-item-link-3">con Backup</a></li>                    
-                                                        <li><a href="#" class="submenu-item-link-3">sin Backup</a></li>
-                                                    </ul></li>
-                                                </li>                    
-                                                <li><a href="#" class="submenu-item-link-2">de Programas</a></li>
-                                            </ul></li>
-                                        </li>
-                                        <li class="submenu-item" id="submenu-item-combos"><a href="#" class="submenu-item-link">Combos</a>
-                                            <ul class="submenu-2" id="submenu-2">
-                                                <li><a href="#" class="submenu-item-link-2 no-desbordable">Formateo + Backup + Mantenimiento</a></li>                    
-                                                <li><a href="#" class="submenu-item-link-2 no-desbordable">Mantenimiento Integral</a></li>
-                                            </ul></li>
-                                        </li>
-                                        <li class="submenu-item" id="submenu-item-arm"><a href="#" class="submenu-item-link">Armados de PC</a>
-                                            <ul class="submenu-2" id="submenu-2">
-                                                <li><a href="#" class="submenu-item-link-2">Armado Completo</a></li>                    
-                                                <li><a href="#" class="submenu-item-link-2 no-desbordable">Actualización de Componentes</a></li>
-                                            </ul></li>
-                                        </li>
-                                    </ul></li>
-                                <li class="menu-item"><a href="#contact__box" class="menu-item-link">Contacto</a></li>
-                                <div>
-                                    <a href="https://facebook.com/protech.pcservice" target="blank"><button class="nav-toggle"><i class="fa-brands fa-facebook"></i></button></a>
-                                    <a href="https://instagram.com/protech.pc" target="blank"><button class="nav-toggle"><i class="fa-brands fa-instagram"></i></button></a>
-                                    <a href="https://api.whatsapp.com/send?phone=541154964215&text=" target="blank"><button class="nav-toggle"><i class="fab fa-whatsapp"></i></button></a>     
-                                    <a href="mailto:profetechnologypc@gmail.com" target="blank"><button class="nav-toggle"><i class="fas fa-envelope"></i></button></a>                           
-                                </div>
-                            </ul>
-                            
-                        </nav>
-                    </div>
+                <div class="nav-menu-box">                   
+                    <div class="logo__box"><a href="index.html"><img src="iconos/logo.png" class="logo" alt="Main Logo"></a></div>
+                    <!--<div class="buscar">
+                        <input type="text" placeholder="Buscar" required>
+                        <div class="btn">
+                            <i class="fa fa-search"></i>
+                        </div>-->
+                    <nav class="nav-menu">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#" id="selected" class="menu-item-link"></a></li>                    
+                            <li class="menu-item"><a href="#" class="menu-item-link">Servicios</a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="#" class="submenu-item-link">Mantenimientos</a>
+                                        <ul class="submenu-2">
+                                            <li><a href="#" class="submenu-item-link-2">de Sistema</a></li>                    
+                                            <li><a href="#" class="submenu-item-link-2">de Componentes</a></li>
+                                        </ul></li>
+                                    </li>                    
+                                    <li class="submenu-item" id="submenu-item-inst"><a href="#" class="submenu-item-link">Instalaciones</a>
+                                        <ul class="submenu-2">
+                                            <li class="submenu-item-2"><a href="#" class="submenu-item-link-2">de Sistema</a>
+                                                <ul class="submenu-3">
+                                                    <li><a href="#" class="submenu-item-link-3">con Backup</a></li>                    
+                                                    <li><a href="#" class="submenu-item-link-3">sin Backup</a></li>
+                                                </ul></li>
+                                            </li>                    
+                                            <li><a href="#" class="submenu-item-link-2">de Programas</a></li>
+                                        </ul></li>
+                                    </li>
+                                    <li class="submenu-item" id="submenu-item-combos"><a href="#" class="submenu-item-link">Combos</a>
+                                        <ul class="submenu-2" id="submenu-2">
+                                            <li><a href="#" class="submenu-item-link-2 no-desbordable">Formateo + Backup + Mantenimiento</a></li>                    
+                                            <li><a href="#" class="submenu-item-link-2 no-desbordable">Mantenimiento Integral</a></li>
+                                        </ul></li>
+                                    </li>
+                                    <li class="submenu-item" id="submenu-item-arm"><a href="#" class="submenu-item-link">Armados de PC</a>
+                                        <ul class="submenu-2" id="submenu-2">
+                                            <li><a href="#" class="submenu-item-link-2">Armado Completo</a></li>                    
+                                            <li><a href="#" class="submenu-item-link-2 no-desbordable">Actualización de Componentes</a></li>
+                                        </ul></li>
+                                    </li>
+                                </ul></li>
+                            <li class="menu-item"><a href="#contact__box" class="menu-item-link">Contacto</a></li>
+                            <div>
+                                <a href="https://facebook.com/protech.pcservice" target="blank"><button class="nav-toggle"><i class="fa-brands fa-facebook"></i></button></a>
+                                <a href="https://instagram.com/protech.pc" target="blank"><button class="nav-toggle"><i class="fa-brands fa-instagram"></i></button></a>
+                                <a href="https://api.whatsapp.com/send?phone=541154964215&text=" target="blank"><button class="nav-toggle"><i class="fab fa-whatsapp"></i></button></a>     
+                                <a href="mailto:profetechnologypc@gmail.com" target="blank"><button class="nav-toggle"><i class="fas fa-envelope"></i></button></a>                           
+                            </div>
+                        </ul>                            
+                    </nav>
+                    <span class="btn__menu" aria-label="Abrir menú">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>                    
                 </div>
             </header>
             <main>
@@ -84,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="carousel_ig">
+                <div class="carousel__ig">
                     <!-- SnapWidget -->
                     <h2>Últimas publicaciones</h2>
                     <div class="ig__lista">
@@ -93,6 +96,10 @@
 <iframe src="https://snapwidget.com/embed/985791" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="yes" style="border:none; overflow:hidden;  width:80%; "></iframe>
                     </div>
                 </div>
+                <section class="carousel__servicios">
+
+
+                </section>
             </main>
             <section class="contact-box" id="contact__box">
                 <h2>Contacto</h2>
