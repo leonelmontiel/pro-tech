@@ -19,7 +19,7 @@
     height: 86vh;
     position: relative;
 
-    animation: movimiento 20s infinite linear alternate;
+    animation: movimiento__portada 20s infinite linear alternate;
 } 
 
 .portada-detalles {
@@ -45,9 +45,9 @@
 
 /* --- INSTAGRAM --- */
 
-.carousel__ig > h2, .contact-box > h2 {    
+.carousel__ig > h2, .contact-box > h2,
+.carousel__servicios > h2 {    
     text-align: center;
-    /* margin: 20px 50px */;
     font-size: 2.5em;
     font-weight: 100;
 }
@@ -60,12 +60,67 @@
     display: none;
 }
 
+/* --- CARRUSEL SERVICIOS --- */
+
+.carousel__servicios {
+    background-color: azure;
+    margin-bottom: -35px;
+    padding-bottom: 50px;
+}
+
+.carousel__servicios .card-box {
+    flex-wrap: nowrap;   
+}
+
+.carousel__servicios .fondo {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: movimiento__servicios 20s infinite linear alternate;
+}
+
+.carousel__servicios .fondo:hover {
+    background-repeat: no-repeat;
+    background-size: 300%;        
+}
+
+.carousel__servicios .card__link:hover {
+    color: #cf1104;
+}
+
+.card__link {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    transition: all 0.4s ease;
+}
+
+#img__mant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/mant.png);
+}
+#img__inst {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/inst.png);
+}
+#img__combos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/combos.png);
+}
+#img__arm {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/arm.png);
+}
+ 
+.carousel__servicios > h2 {
+    color: #00008d;
+    padding-top: 15px;
+}
+
 /* --- CONTACTO --- */
 
 .contact-box {
     background-color: #cf1104;
     height: auto;
     padding-bottom: 3vw;
+    box-sizing: border-box;
 }
 
 .card-box {
@@ -136,7 +191,7 @@
 
 /* ------- KEYFRAMES ------- */
 
-@keyframes movimiento {
+@keyframes movimiento__portada {
     from{
         background-position: bottom left;
     }to{
@@ -144,9 +199,18 @@
     }
 }
 
+@keyframes movimiento__servicios {
+    from{
+        background-position: left;
+    }to{
+        background-position: right;
+    }
+}
+
 /* ----- NEDIA QUERYS ----- */
 
 @media screen and (max-width: 768px) {
+
     .portada-img {
         height: calc(100vh - 75px);
     }
@@ -172,6 +236,21 @@
     .desk__on {
         display: none;
     }
+
+    /* --- CARRUSEL SERVICIOS --- */
+
+    .carousel__servicios .card-box {
+        flex-wrap: wrap;   
+    }
+
+    .carousel__servicios .card {
+        height: 10vh;
+    }
+
+    .carousel__servicios .fondo {
+        background-size: 200%;
+    }
+
 }
 
 @media screen and (max-width: 286px) {
@@ -187,7 +266,7 @@
         font-size: 0.7em;
     }
 
-    .carousel__ig h2,
+    .carousel__ig h2, .carousel__servicios h2
     .contact-box h2 {
         font-size: 1.7em;
     }
