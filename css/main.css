@@ -303,6 +303,10 @@ body {
     text-align: center;
 }
 
+.responsive__on {
+    display: none;
+}
+
 /* --- CONTACTO --- */
 
 .contact-box {
@@ -478,6 +482,14 @@ body {
 
     .footer__box img {
         width: 20%;
+    }
+
+    .responsive__on {
+        display: block;
+    }
+
+    .desk__on {
+        display: none;
     }
 }
 
