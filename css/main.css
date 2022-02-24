@@ -285,19 +285,10 @@
 
 @media screen and (max-width: 480px) {
     .portada-detalles h2 {
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
 
     .portada-detalles p {
-        font-size: 0.9em;
-    }
-
-    .card__content {
-        font-size: 0.7em;
-    }
-
-    .carousel__ig h2, .carousel__servicios h2
-    .contact-box h2 {
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
 }
