@@ -263,7 +263,7 @@ body {
 
  .portada-img {
     background-image: url(../img/portada.jpg);
-    height: 650px;
+    height: 86vh;
     position: relative;
 
     animation: movimiento 20s infinite linear alternate;
@@ -292,10 +292,6 @@ body {
 
 /* --- INSTAGRAM --- */
 
-.carousel__ig {
-    /* padding: 50px; */
-}
-
 .carousel__ig > h2, .contact-box > h2 {    
     text-align: center;
     /* margin: 20px 50px */;
@@ -312,7 +308,7 @@ body {
 .contact-box {
     background-color: #cf1104;
     height: auto;
-    padding: 3vw;
+    padding-bottom: 3vw;
 }
 
 .card-box {
@@ -326,8 +322,8 @@ body {
 
 .card {
     background-color: whitesmoke;
-    width: 45vh;
-    height: 35vh;
+    width: 50vh;
+    height: 40vh;
     color: black;
     text-align: center;
     display: table;
@@ -344,6 +340,10 @@ body {
 
 .card__content > h3 {
     color: #8b8b8b
+}
+
+.contact-box > h2 {
+    padding-top: 2vw;
 }
 
 .contact-toggle {
@@ -474,6 +474,10 @@ body {
 
     #descr__footer {
         max-width: 100%;
+    }
+
+    .footer__box img {
+        width: 20%;
     }
 }
 
