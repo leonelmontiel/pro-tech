@@ -291,4 +291,8 @@
     .portada-detalles p {
         font-size: 1.2em;
     }
+
+    .carousel__ig h2, .carousel__serviciosh2, .contact-box h2 {
+        font-size: 1.7em;
+    }
 }
