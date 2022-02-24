@@ -1,0 +1,303 @@
+/* ----- MAIN ----- */
+
+.capa-gradiente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(312deg, rgba(0,0,128,0.5018382352941176) 65%, rgba(207,17,4,1) 100%);
+}
+
+.portada {    
+    display: flex;
+
+    box-shadow: 0px 0px 3px black;
+    z-index: -10; /*para que se vea el menu desplegable */
+}
+
+ .portada-img {
+    background-image: url(../img/portada.jpg);
+    height: 86vh;
+    position: relative;
+
+    animation: movimiento__portada 20s infinite linear alternate;
+} 
+
+.portada-detalles {
+    text-shadow: 1px 1px 3px black;
+    
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+
+    max-width: 65%;
+}
+
+.portada-detalles > h2 {
+    color: #cf1104;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.portada-detalles > p {
+    color: ghostwhite;
+    font-size: 1.5em;
+}
+
+/* --- INSTAGRAM --- */
+
+.carousel__ig > h2, .contact-box > h2,
+.carousel__servicios > h2 {    
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.ig__lista {
+    text-align: center;
+}
+
+.responsive__on {
+    display: none;
+}
+
+/* ---- CARD ---- */
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;    
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 50vh;
+    height: 40vh;
+    color: black;
+    text-align: center;
+    display: table;
+}
+
+.card__content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card__content p {
+    padding: 0 20px;
+}
+
+.card__content > h3 {
+    color: #8b8b8b
+}
+
+/* --- CARRUSEL SERVICIOS --- */
+
+.carousel__servicios {
+    background-color: azure;
+    margin-bottom: -35px;
+    padding-bottom: 50px;
+}
+
+.carousel__servicios .card-box {
+    flex-wrap: nowrap;   
+}
+
+.carousel__servicios .fondo {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: movimiento__servicios 20s infinite linear alternate;
+}
+
+.carousel__servicios .fondo:hover {
+    background-repeat: no-repeat;
+    background-size: 300%;        
+}
+
+.carousel__servicios .card__link:hover {
+    color: #cf1104;
+}
+
+.card__link {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    transition: all 0.4s ease;
+}
+
+#img__mant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/mant.png);
+}
+#img__inst {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/inst.png);
+}
+#img__combos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/combos.png);
+}
+#img__arm {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/arm.png);
+}
+ 
+.carousel__servicios > h2 {
+    color: #00008d;
+    padding-top: 15px;
+}
+
+/* --- CONTACTO --- */
+
+.contact-box {
+    background-color: #cf1104;
+    height: auto;
+    padding-bottom: 3vw;
+    box-sizing: border-box;
+}
+
+.contact-box .card-box {
+    gap: 1em;
+    max-width: 100%; 
+}
+
+.contact-box .card {
+    background-color: whitesmoke;
+    width: 35vh;
+    height: 35vh;
+}
+
+.contact-box > h2 {
+    padding-top: 2vw;
+}
+
+.contact-toggle {
+    background: none;
+    color: #8b8b8b;
+    border: solid #b6b6b6;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn__dir:hover {
+    color: magenta;
+}
+
+#btn__wsp:hover {
+    color: lightgreen;
+}
+
+#btn__email:hover {
+    color: gold;
+}
+
+#btn__fb:hover {
+    color: dodgerblue;
+}
+
+#btn__ig:hover {
+    color: tomato;
+}
+
+/* ------- KEYFRAMES ------- */
+
+@keyframes movimiento__portada {
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+@keyframes movimiento__servicios {
+    from{
+        background-position: left;
+    }to{
+        background-position: right;
+    }
+}
+
+/* ----- NEDIA QUERYS ----- */
+
+@media screen and (min-width: 769px) and (max-width: 1200px) and (orientation: landscape){
+    
+    .contact-box .card {
+        width: 30vh;
+        height: auto;
+    }
+
+    .card__content {
+        font-size: 0.8em;
+    }
+
+    .contact-toggle {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .portada-img {
+        height: calc(100vh - 75px);
+    }
+
+    .portada-detalles {
+        text-align: center;
+        padding: 10%;
+        max-width: 100%;
+    }
+
+    .portada-detalles h2 {
+        font-size: 1.8em;
+    }
+
+    .portada-detalles p {
+        line-height: 1.5em;
+    }
+
+    .responsive__on {
+        display: block;
+    }
+
+    .desk__on {
+        display: none;
+    }
+
+    /* --- CARRUSEL SERVICIOS --- */
+
+    .carousel__servicios .card-box {
+        flex-wrap: wrap;   
+    }
+
+    .carousel__servicios .card {
+        height: 10vh;
+    }
+
+    .carousel__servicios .fondo {
+        background-size: 200%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .portada-detalles h2 {
+        font-size: 1.3em;
+    }
+
+    .portada-detalles p {
+        font-size: 0.9em;
+    }
+
+    .card__content {
+        font-size: 0.7em;
+    }
+
+    .carousel__ig h2, .carousel__servicios h2
+    .contact-box h2 {
+        font-size: 1.7em;
+    }
+}
