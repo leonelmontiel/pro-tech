@@ -69,7 +69,8 @@
 }
 
 .carousel__servicios .card-box {
-    flex-wrap: nowrap;   
+    flex-wrap: nowrap;  
+    width: 80%; 
 }
 
 .carousel__servicios .fondo {
@@ -128,14 +129,14 @@
     justify-content: center;
     gap: 2em;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;    
 }
 
 .card {
     background-color: whitesmoke;
-    width: 50vh;
-    height: 40vh;
+    width: 30vh;
+    height: 30vh;
     color: black;
     text-align: center;
     display: table;
@@ -144,6 +145,7 @@
 .card__content {
     display: table-cell;
     vertical-align: middle;
+    font-size: 0.9em;
 }
 
 .card__content p {
