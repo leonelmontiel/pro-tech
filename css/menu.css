@@ -1,0 +1,287 @@
+/* ----- NAV-MENU ----- */
+
+.nav-toggle {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-menu-box {
+    background-color: darkblue;
+    line-height: 70px;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    overflow: visible; /* para que se pueda ver desplegado el submenu */
+}
+
+/* --- LOGO --- */
+
+.logo {
+    width: 50%;
+    vertical-align: middle;
+}
+
+/* --- BUSCAR --- */
+/*
+.buscar {
+    height: 75px;
+    position: relative; /*puse relative para que al expandirse el bucador
+    no se superponga con los otros elementos
+    display: flex;
+    align-items: center;
+}
+
+.buscar input {
+    width: 0px;
+    opacity: 0;
+    height: 35px;
+    padding: 0 7px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn {
+    right: -5px;
+    position: absolute;
+    background: hsl(4, 96%, 41%);
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    /* para el logito de la lupa
+    display: flex;
+    justify-content: center;
+}
+
+.btn i {
+    padding-top: 13px;
+    line-height: 25px;
+}
+
+.buscar:hover input, .buscar input:focus {
+    width: 240px;
+    opacity: 1;
+}*/
+
+/* --- MENU --- */
+
+.menu {
+    display: flex;
+    margin: 0;
+    gap: 2px;
+}
+
+.menu-item {
+    list-style: none;
+    position: relative;
+    font-weight: bold;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+    transition: all 300ms ease;
+}
+
+.menu-item-link:hover {
+    transform: scale(1.1);
+    background: rgba(167, 11, 0, 0.9);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#selected {
+    transform: scale(1.1);
+    background-color: rgba(167, 11, 0, 0.9);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#selected:hover {
+    background-color: #cf1104;
+}
+
+.menu-item:first-child > .menu-item-link {
+    background-image: url(../iconos/home.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 14px 26px;
+}
+
+/* - SUBMENU - */
+
+.submenu, .submenu-2, .submenu-3 {
+    list-style: none;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    background: #a80b00;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    padding: 4px 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+    top: 150px;
+    left: -5px;
+    padding-bottom: 13px;
+}
+
+.submenu-2, .submenu-3 {
+    width: auto;
+    left: 180px;
+    background: #00008b;
+}
+
+.submenu-3 {
+    left: 124px;
+}
+
+.menu-item:hover .submenu,
+.submenu-item:hover .submenu-2,
+.submenu-item-2:hover .submenu-3{
+    visibility: visible;
+    opacity: 1;
+    top: 60px;
+}
+
+.submenu-item:hover .submenu-2 {
+    top: 20px;
+}
+
+.submenu-item-2:hover .submenu-3 {
+    top: 10px;
+}
+
+#submenu-item-inst:hover .submenu-2 {
+    top: 55px;
+}
+
+#submenu-item-combos:hover .submenu-2 {
+    top: 90px;
+}
+
+#submenu-item-arm:hover .submenu-2 {
+    top: 130px;
+}
+
+.submenu:before {
+    /*triangulito encima del submenu*/
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #a80b00;
+    top: -12px;
+    left: 20px;
+}
+
+.submenu-item-link,
+.submenu-item-link-2,
+.submenu-item-link-3 {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    transition: all 300ms ease;
+    height: 15px;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+.submenu-item-link:hover,
+.submenu-item-link-2:hover,
+.submenu-item-link-3:hover {
+    background: rgb(0, 0, 139);
+    transform: scale(1.1);
+    padding-left: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.submenu-item-link-2:hover,
+.submenu-item-link-3:hover {
+    background: rgba(167, 11, 0);
+}
+
+/* --- MENU RESPONSIVE --- */   
+
+.btn__menu {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .btn__menu {
+        display: inline-flex;
+        align-self: center;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100vw;
+        top: 76px;
+        left: 100%;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+        background-color: #0202a0;
+        padding: 20px 0;
+        height: auto;
+
+        overflow-y: auto;
+        height: calc(100% - 75px);
+    }
+
+    .menu__visible {
+        left: 0;
+    }
+
+    .menu-item {
+        margin: 30px 0 0 0;
+        line-height: 70px;
+    }
+
+    .menu-item-link:hover {
+        background-color: #a80b00;
+    }
+
+    .menu-item-link {
+        font-size: 20px;
+    }
+
+    #selected {
+        padding: 5vw 50vw;        
+    }
+
+    .menu-item-link {
+        padding: 5vw 40vw;    
+    }
+
+    .menu-item:first-child > .menu-item-link {
+        background-size: 30px;
+    }
+
+    .nav-toggle {
+        font-size: 2em;
+        line-height: 120px;
+        margin: 0 10px;
+    }
+}

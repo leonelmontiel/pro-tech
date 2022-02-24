@@ -1,0 +1,28 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #00008b;
+    color: white;
+    position: relative;
+    top: 75px;
+}
+
+.no-desbordable {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ------- MEDIA QUERYS ------- */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    
+}
