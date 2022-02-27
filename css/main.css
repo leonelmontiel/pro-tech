@@ -60,6 +60,10 @@
     display: none;
 }
 
+.ver-mas__box {
+    text-align: center;
+}
+
 /* ---- CARD ---- */
 
 .card-box {
