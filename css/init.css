@@ -40,5 +40,9 @@ body {
         flex-direction: column;
     }
 
+    .btn__ver-mas {
+        font-size: 1.5em;
+    }
+
     
 }
