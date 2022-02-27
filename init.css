@@ -1,0 +1,48 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #00008b;
+    color: white;
+    position: relative;
+    top: 75px;
+}
+
+.no-desbordable {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn__ver-mas {
+    background-color: #cf1104;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn__ver-mas:hover {
+    background-color: white;
+    color: #00008b;
+
+}
+ 
+/* ------- MEDIA QUERYS ------- */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .btn__ver-mas {
+        font-size: 1.5em;
+    }
+
+    
+}
