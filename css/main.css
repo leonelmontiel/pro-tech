@@ -25,7 +25,7 @@
 .portada-detalles {
     text-shadow: 1px 1px 3px black;
     
-    z-index: 10;
+    z-index: 5;
     margin: auto;
     text-align: center;
 
@@ -70,14 +70,13 @@
     display: flex;
     justify-content: center;
     gap: 2em;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 80%;
     margin: 0 auto;    
 }
 
 .card {
     background-color: whitesmoke;
-    width: 50vh;
     height: 40vh;
     color: black;
     text-align: center;
@@ -105,11 +104,7 @@
     padding-bottom: 50px;
 }
 
-.carousel__servicios .card-box {
-    flex-wrap: nowrap;   
-}
-
-.carousel__servicios .fondo {
+.fondo {
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -117,20 +112,19 @@
     animation: movimiento__servicios 20s infinite linear alternate;
 }
 
-.carousel__servicios .fondo:hover {
-    background-repeat: no-repeat;
+.fondo:hover {
     background-size: 300%;        
 }
 
-.carousel__servicios .card__link:hover {
+.card__link:hover {
     color: #cf1104;
 }
-
 .card__link {
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 3px black;
     transition: all 0.4s ease;
+    font-size: 1.3em;
 }
 
 #img__mant {
@@ -267,17 +261,15 @@
         display: none;
     }
 
-    /* --- CARRUSEL SERVICIOS --- */
-
-    .carousel__servicios .card-box {
+    .card-box {
         flex-wrap: wrap;   
     }
 
-    .carousel__servicios .card {
+    .card {
         height: 10vh;
     }
 
-    .carousel__servicios .fondo {
+    .fondo {
         background-size: 200%;
     }
 
