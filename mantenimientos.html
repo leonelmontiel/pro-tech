@@ -37,10 +37,6 @@
                     <li class="menu-item"><a href="#" class="menu-item-link">Servicios</a>
                         <ul class="submenu">
                             <li class="submenu-item"><a href="mantenimientos.html" class="submenu-item-link">Mantenimientos</a>
-                                <!--<ul class="submenu-2">
-                                    <li><a href="#" class="submenu-item-link-2 no-desbordable">de Sistema</a></li>                    
-                                    <li><a href="#" class="submenu-item-link-2 no-desbordable">de Componentes</a></li>
-                                </ul>-->
                             </li>                    
                             <li class="submenu-item" id="submenu-item-inst"><a href="#" class="submenu-item-link">Instalaciones</a>
                                 <!--<ul class="submenu-2">
@@ -79,28 +75,149 @@
         <div class="portada-box portada-img">
             <div class="portada-detalles">
                 <h2>Mantenimientos</h2>
+                <p>
+                    Debe solicitar estos servicios si nota ruidos extraños dentro 
+                    del gabinete, o si la computadora funciona extremadamente lenta o si hace
+                    más de 6 meses que no se le realizó una limpieza.
+                </p>
             </div>
             <div class="botones__portada">
-                <img width="500px" src="img/servicios/mant_portada.png" alt="">
                 <div class="card-box">
                     <div class="card fondo" id="img__comp">
                         <div class="card__content">
-                            <a class="card__link" href="#"><h3>de Componentes</h3></a>
+                            <a class="card__link" href="#info__comp"><h3>de Componentes</h3></a>
                         </div>
                     </div>
                     <div class="card fondo" id="img__sist">
                         <div class="card__content">
-                            <a class="card__link" href="#"><h3>de Sistema</h3></a>
+                            <a class="card__link" href="#info__sist"><h3>de Sistema</h3></a>
                         </div>
                     </div>
                     <div class="card fondo" id="img__int">
                         <div class="card__content">
-                            <a class="card__link" href="#"><h3>Integral</h3></a>
+                            <a class="card__link" href="#info__int"><h3>Integral</h3></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
+        <section class="info-servicios__box">
+
+            <div class="info-servicios" id="info__comp">
+                <div class="info-servicios__card">
+                    <img width="500px" src="img/servicios/comp_img.png" alt="">
+                    <div class="info">
+                        <h3>Mantenimiento de componentes</h3>
+                        <p>Limpieza completa de los componentes dentro de la PC.
+                        Es decir, se cambia la pasta térmica del procesador,
+                        se quita todo el polvo y tierra que pueda haber dentro
+                        del gabinete, se redistribuye el cableado si es necesario, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-servicios" id="info__sist">                
+                <div class="info-servicios__card">
+                    <img width="500px" src="img/servicios/sist_img.png" alt="">
+                    <div class="info">
+                        <h3>Mantenimiento de sistema</h3>
+                        <p>Limpieza completa de archivos basura, virus y malware
+                            del sistema (no se formatea). Además, se aplica
+                            una optimización que hará que la PC se siente notoriamente
+                            más ligera.
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="info-servicios" id="info__int">
+                <div class="info-servicios__card">
+                    <img width="500px" src="img/servicios/inte_img.png" alt="">
+                    <div class="info">
+                        <h3>Mantenimiento integral</h3>
+                        <p>Limpieza completa de los componentes dentro del PC.
+                            Limpieza de archivos basura, virus y malware del sistema 
+                            (se formatea solo si es necesario, en ese caso se solicita
+                             la autorización del cliente).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="carousel__ig desk__on">
+            <h2>Publicaciones recientes</h2>
+            <div class="ig__lista">
+                <script loading="lazy" src="https://snapwidget.com/js/snapwidget.js"></script>
+                <iframe loading="lazy" src="https://snapwidget.com/embed/985791" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="yes" style="border:none; overflow:hidden;  width:80%; "></iframe>
+            </div>
+        </div>
+        <div class="carousel__ig responsive__on">
+            <h2>Publicaciones recientes</h2>
+            <div class="ig__lista">
+                <!-- SnapWidget -->
+                <script loading="lazy" src="https://snapwidget.com/js/snapwidget.js"></script>
+                <iframe loading="lazy" src="https://snapwidget.com/embed/987059" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="yes" style="border:none; overflow:hidden;  width:80%; "></iframe>
+            </div>
+        </div>
+
+        <div class="ver-mas__box">
+            <a href="https://instagram.com/protech.pc" target="blank"><button class="btn__ver-mas">Ver más</button></a>
+        </div>
     </main>
+
+    <section class="contact-box" id="contact__box">
+        <h2>Contacto</h2>
+        <div class="card-box">
+            <div class="card">
+                <div class="card__content">
+                    <a href="https://api.whatsapp.com/send?phone=541154964215&text=" target="blank"><button class="contact-toggle" id="btn__wsp"><i class="fab fa-whatsapp fa-2x"></i></button></a>  
+                    <h3>Whatsapp:</h3>
+                    <p>+54 11-5496-4215</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    <a href="mailto:profetechnologypc@gmail.com" target="blank"><button class="contact-toggle" id="btn__email"><i class="fas fa-envelope fa-2x"></i></i></button></a>  
+                    <h3>Correo:</h3>
+                    <p>profetechnologypc@gmail.com</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    <a href="https://www.google.com/maps/dir//Pro%E2%80%A2Tech/data=!4m8!4m7!1m0!1m5!1m1!1s0x95a32f80c3146065:0xce2b43ce635d7cf4!2m2!1d-58.2561897!2d-34.750074" target="blank">
+                        <button class="contact-toggle" id="btn__dir"><i class="fa-solid fa-location-dot fa-2x"></i></button></a>
+                    <h3>Dirección:</h3>
+                    <p>Bolivia 1483, entre Urquiza y Av. Oscar Smith. Ezpeleta Oeste, Bs. As.</p>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="card__content">
+                    <a href="https://facebook.com/protech.pcservice" target="blank"><button class="contact-toggle" id="btn__fb"><i class="fa-brands fa-facebook fa-2x"></i></button></a>  
+                    <h3>Facebook:</h3>
+                    <p>/protech.pcservice</p>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="card__content">
+                    <a href="https://instagram.com/protech.pc" target="blank"><button class="contact-toggle" id="btn__ig"><i class="fa-brands fa-instagram fa-2x"></i></button></a>  
+                    <h3>Instagram:</h3>
+                    <p>@protech.pc</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__box">
+            <div class="footer__descr">
+                <p id="descr__footer">Somos un emprendimiento dedicado al soporte informático,
+                    con las tarifas de las más económicas en Quilmes y alrededores.</p>
+                <div><a href="index.html"><img src="iconos/logo.png" class="logo" alt="Main Logo"></a></div>
+            </div>
+            <p style="text-align: center;">Pro•Tech | Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
