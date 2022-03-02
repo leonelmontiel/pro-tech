@@ -179,7 +179,7 @@
     }
 
     .info-servicios__card {
-        flex-direction: column;
+        flex-direction: column !important;
         justify-content: center;
         flex-wrap: wrap;
     }
