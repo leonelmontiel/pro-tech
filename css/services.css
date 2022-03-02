@@ -132,32 +132,6 @@
 
 /* ------- MEDIA QUERYS ------- */
 
-@media  screen and (max-width: 1023px) and (orientation: landscape) {
-
-    body {
-        font-size: 0.7em;
-    }
-
-    .botones__portada .card-box {
-        flex-direction: row !important;
-        flex-wrap: nowrap;
-    }
-
-    /* --- INFO SERVICIOS --- */
-
-    .info-servicios img {
-        width: 30% !important;
-    }
-
-    .desk__on {
-        display: contents !important;
-    }
-
-    .responsive__on {
-        display: none !important;
-    }
-} 
-
 @media screen and (max-width: 768px) {
 
     /* ----- PORTADA ----- */
@@ -201,13 +175,43 @@
     }
 
     .info-servicios h3 {
-        text-align: center !important;
+        text-align: center;
     }
 
     .info-servicios__card {
-        flex-direction: column !important;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
     }
 
 }
+
+@media  screen and (max-width: 1023px) and (orientation: landscape) {
+
+    body {
+        font-size: 0.7em;
+    }
+
+    .botones__portada .card-box {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    /* --- INFO SERVICIOS --- */
+
+    .info-servicios img {
+        width: 30%;
+    }
+
+    .desk__on {
+        display: contents;
+    }
+
+    .responsive__on {
+        display: none;
+    }
+
+    .portada__servicios .portada-box {
+        height: calc(100vh - 50px);
+    }
+} 

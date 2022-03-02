@@ -235,6 +235,15 @@
         width: 65px;
         height: 65px;
     }
+
+    body {
+        font-size: 0.7em;
+        top: 50px;
+    }
+
+    .portada {
+        height: calc(100vh - 50px);
+    }
 }
 
 @media screen and (max-width: 768px) {
