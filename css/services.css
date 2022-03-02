@@ -197,6 +197,10 @@
         flex-wrap: nowrap;
     }
 
+    .botones__portada .card {
+        height: 10vh;
+    }
+
     /* --- INFO SERVICIOS --- */
 
     .info-servicios img {
