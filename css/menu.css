@@ -330,6 +330,10 @@
 }
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
+
+    .menu-item-link {
+        padding: 11px;
+    }
     
     .nav-menu-box, .nav-menu, .menu, .menu-item,
     .submenu-item{
