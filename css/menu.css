@@ -232,7 +232,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     .btn__menu {
         display: inline-flex;
         align-self: center;
@@ -331,23 +331,70 @@
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
 
-    .menu-item-link {
-        padding: 11px;
+    .menu {
+        width: 50vw;
+        top: 51px;
+        height: 200vh;
+        padding: 0 0;
     }
-    
-    .nav-menu-box, .nav-menu, .menu, .menu-item,
-    .submenu-item{
-        height: 50px;
+
+    .menu-item {
+        margin: 0 0 !important;
+    }
+
+    .menu__visible {
+        left: 50%;
+    }
+
+    .menu-item {
+        margin: 10px 0 0 0;
         line-height: 50px;
+    }
+
+    .menu-item-link:hover {
+        background-color: #a80b00;
+        padding: 2vw 38%;
+    }
+
+    .menu-item-link {
+        font-size: 15px;
+    }
+
+    #selected {
+        padding: 2vw 50%;        
+    }
+
+    .submenu, .submenu-2, .submenu-3 {
+        padding: 0 0;
+    }
+
+    .submenu-item-link,
+    .submenu-item-link-2,
+    .submenu-item-link-3 {
+        height: 15px;
+        line-height: 15px;
+        font-size: 15px;
+        padding: 15px auto;
+        margin: 0px;
+    }
+
+    .menu, .menu-item{
+        height: calc(100vh - 50px) !important;
+        line-height: 50px;
+    }
+
+    .nav-toggle {
+        line-height: 0;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .nav-menu-box {
+        line-height: 50px;
+        height: 50px;
     }
 
     .logo {
         width: 30%;
     }
-
-    .menu-item:first-child > .menu-item-link {
-        background-size: 15px;
-        padding: 11px 20px;
-    }
-
 }

@@ -125,6 +125,7 @@
     text-shadow: 1px 1px 3px black;
     transition: all 0.4s ease;
     font-size: 1.3em;
+    cursor: pointer;
 }
 
 #img__mant {
@@ -246,7 +247,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
 
     .portada-detalles {
         text-align: center;
@@ -281,6 +282,24 @@
         background-size: 200%;
     }
 
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+    body {
+        font-size: 0.8em;
+    }
+
+    .portada {
+        height: calc(100vh - 50px);
+    }
+
+    .desk__on {
+        display: contents;
+    }
+
+    .responsive__on {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
