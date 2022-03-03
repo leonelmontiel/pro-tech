@@ -114,7 +114,7 @@ body {
 }
 
 .contact-box .card__content > h3 {
-    color: #00008b;
+    color: rgb(71, 70, 70);
 }
 
 .contact-toggle {
@@ -208,6 +208,14 @@ body {
 
     .maps .card{
         height: 200px;
+    }
+
+    .responsive__on {
+        display: none !important;
+    }
+
+    .desk__on {
+        display: contents !important;
     }
 }
 

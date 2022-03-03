@@ -46,7 +46,7 @@
 /* --- BOTONES SERVICIOS --- */
 
 .carousel__servicios {
-    background-color: azure;
+    background-color: #eeeeee;
     padding: 1vh 0;
 }
 
@@ -158,7 +158,6 @@
 
     .carousel__servicios {
         display: flex;
-        height: calc(100vh - 50px);
         flex-direction: column !important;
         justify-content: center !important;
     }
@@ -193,4 +192,5 @@
     .carousel__ig h2, .carousel__servicios h2, .contact-box h2 {
         font-size: 1.7em;
     }
+
 }
