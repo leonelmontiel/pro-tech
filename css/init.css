@@ -19,6 +19,64 @@ body {
     text-overflow: ellipsis;
 }
 
+/* --- INSTAGRAM --- */
+
+.carousel__ig > h2, .contact-box > h2,
+.carousel__servicios > h2 {    
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.ig__lista {
+    text-align: center;
+}
+
+.responsive__on {
+    display: none;
+}
+
+.ver-mas__box {
+    text-align: center;
+}
+
+/* ---- CARD ---- */
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: nowrap;
+    max-width: 80%;
+    margin: 0 auto;    
+}
+
+.card {
+    height: 40vh;
+    color: black;
+    text-align: center;
+    display: table;
+}
+
+.card__content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card__content p {
+    padding: 0 20px;
+}
+
+.card__content > h3 {
+    color: #8b8b8b
+}
+
+/* ----- VER MAS ----- */
+
+.ver-mas__box {
+    padding: 3vh 0;
+}
+
 .btn__ver-mas {
     background-color: #cf1104;
     border: none;
@@ -34,6 +92,69 @@ body {
     color: #00008b;
 
 }
+
+/* --- CONTACTO --- */
+
+.contact-box {
+    background-color: #cf1104;
+    padding: 1vh 0;
+}
+
+.contact-box .card-box {
+    gap: 0;
+    padding: 3vh 0;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+.contact-box .card {
+    color: white;
+    height: 30vh;
+    width: 40vh;
+}
+
+.contact-box .card__content > h3 {
+    color: #00008b;
+}
+
+.contact-toggle {
+    background: none;
+    color: white;
+    border: solid white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn__dir:hover {
+    color: magenta;
+}
+
+#btn__wsp:hover {
+    color: lightgreen;
+}
+
+#btn__email:hover {
+    color: gold;
+}
+
+#btn__fb:hover {
+    color: dodgerblue;
+}
+
+#btn__ig:hover {
+    color: tomato;
+}
+
+/* ----- MAPS ----- */
+
+.maps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
  
 /* ------- MEDIA QUERYS ------- */
 
@@ -45,9 +166,35 @@ body {
         top: 75px;
     }
 
+    .responsive__on {
+        display: block !important;
+    }
+
+    .desk__on {
+        display: none !important;
+    }
+
+    /* ----- VER MAS ----- */
+
+    .ver-mas__box {
+        padding: 3vh 0;
+    }
+
     .btn__ver-mas {
         font-size: 1.5em;
-    }    
+    }  
+    
+    /* ----- CONTACTO ----- */
+
+    .contact-box .card {
+        height: 20vh;
+    }
+
+    /* --- MAPS --- */
+
+    .maps .card{
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
@@ -55,6 +202,12 @@ body {
     body {
         top: 50px !important;
         width: 100vw;
+    }
+
+    /* --- MAPS --- */
+
+    .maps .card{
+        height: 200px;
     }
 }
 

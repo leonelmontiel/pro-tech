@@ -18,10 +18,11 @@
 
 /* ----- MEDIA QUERYS ----- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+
     .footer__descr {
         text-align: center;
-        display: block;
+        display: block;        
     }
 
     #descr__footer {
@@ -30,5 +31,21 @@
 
     .footer__box img {
         width: 20%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+
+    .footer__descr {
+        text-align: center;
+        display: flex;
+    }
+
+    #descr__footer {
+        max-width: 50%;
+    }
+
+    .footer__box img {
+        width: 50%;
     }
 }

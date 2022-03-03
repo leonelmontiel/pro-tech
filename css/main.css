@@ -43,65 +43,15 @@
     font-size: 1.5em;
 }
 
-/* --- INSTAGRAM --- */
-
-.carousel__ig > h2, .contact-box > h2,
-.carousel__servicios > h2 {    
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: 100;
-}
-
-.ig__lista {
-    text-align: center;
-}
-
-.responsive__on {
-    display: none;
-}
-
-.ver-mas__box {
-    text-align: center;
-}
-
-/* ---- CARD ---- */
-
-.card-box {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    flex-wrap: nowrap;
-    max-width: 80%;
-    margin: 0 auto;    
-}
-
-.card {
-    background-color: whitesmoke;
-    height: 40vh;
-    color: black;
-    text-align: center;
-    display: table;
-}
-
-.card__content {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.card__content p {
-    padding: 0 20px;
-}
-
-.card__content > h3 {
-    color: #8b8b8b
-}
-
 /* --- BOTONES SERVICIOS --- */
 
 .carousel__servicios {
     background-color: azure;
-    margin-bottom: -35px;
-    padding-bottom: 50px;
+    padding: 1vh 0;
+}
+
+.carousel__servicios .card-box {
+    padding: 3vh 0;
 }
 
 .fondo {
@@ -143,62 +93,18 @@
  
 .carousel__servicios > h2 {
     color: #00008d;
-    padding-top: 15px;
 }
 
-/* --- CONTACTO --- */
+/* --- VALORACION --- */
 
-.contact-box {
-    background-color: #cf1104;
-    height: auto;
-    padding-bottom: 3vw;
-    box-sizing: border-box;
+.valoracion__box {
+    background: #0000ff;
 }
 
-.contact-box .card-box {
-    gap: 1em;
-    max-width: 100%; 
-}
-
-.contact-box .card {
-    background-color: whitesmoke;
-    width: 35vh;
-    height: 35vh;
-}
-
-.contact-box > h2 {
-    padding-top: 2vw;
-}
-
-.contact-toggle {
-    background: none;
-    color: #8b8b8b;
-    border: solid #b6b6b6;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#btn__dir:hover {
-    color: magenta;
-}
-
-#btn__wsp:hover {
-    color: lightgreen;
-}
-
-#btn__email:hover {
-    color: gold;
-}
-
-#btn__fb:hover {
-    color: dodgerblue;
-}
-
-#btn__ig:hover {
-    color: tomato;
+.valoracion {
+    width: 80%;
+    margin: auto;
+    padding: 10vh 0;
 }
 
 /* ------- KEYFRAMES ------- */
@@ -221,32 +127,6 @@
 
 /* ----- NEDIA QUERYS ----- */
 
-@media screen and (min-width: 769px) and (max-width: 1200px) and (orientation: landscape){
-    
-    .contact-box .card {
-        width: 30vh;
-        height: auto;
-    }
-
-    .card__content {
-        font-size: 0.8em;
-    }
-
-    .contact-toggle {
-        width: 65px;
-        height: 65px;
-    }
-
-    body {
-        font-size: 0.7em;
-        top: 50px;
-    }
-
-    .portada {
-        height: calc(100vh - 50px);
-    }
-}
-
 @media screen and (max-width: 1023px) {
 
     .portada-detalles {
@@ -262,14 +142,6 @@
         line-height: 1.5em;
     }
 
-    .responsive__on {
-        display: block;
-    }
-
-    .desk__on {
-        display: none;
-    }
-
     .card-box {
         flex-wrap: wrap;   
     }
@@ -282,6 +154,21 @@
         background-size: 200%;
     }
 
+    /* - SERVICIOS- */
+
+    .carousel__servicios {
+        display: flex;
+        height: calc(100vh - 50px);
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    /* - VALORACION - */
+
+    .valoracion {
+        width: 60%;
+    }
+
 }
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
@@ -291,14 +178,6 @@
 
     .portada {
         height: calc(100vh - 50px);
-    }
-
-    .desk__on {
-        display: contents;
-    }
-
-    .responsive__on {
-        display: none;
     }
 }
 
