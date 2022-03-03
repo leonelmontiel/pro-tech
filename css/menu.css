@@ -331,11 +331,20 @@
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
 
+    .nav-menu-box {
+        line-height: 50px;
+        height: 50px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
     .menu {
         width: 50vw;
         top: 51px;
-        height: 200vh;
         padding: 0 0;
+        height: calc(100vh - 50px) !important;
     }
 
     .menu-item {
@@ -352,8 +361,8 @@
     }
 
     .menu-item-link:hover {
-        background-color: #a80b00;
-        padding: 2vw 38%;
+        background-color: #003cff;
+        padding: 2vw 42%;
     }
 
     .menu-item-link {
@@ -376,23 +385,5 @@
         font-size: 15px;
         padding: 15px auto;
         margin: 0px;
-    }
-
-    .menu, .menu-item{
-        height: calc(100vh - 50px) !important;
-        line-height: 50px;
-    }
-
-    .nav-toggle {
-        line-height: 0;
-    }
-
-    .nav-menu-box {
-        line-height: 50px;
-        height: 50px;
-    }
-
-    .logo {
-        width: 30%;
-    }
+    }    
 }
