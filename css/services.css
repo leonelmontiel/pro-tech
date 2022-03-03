@@ -1,7 +1,6 @@
 /* ----- PORTADA ----- */
 
 .servicios {
-    font-size: 1em;
     top: 75px;
 }
 
@@ -52,7 +51,6 @@
 }
 
 .botones__portada .card {
-    box-shadow: 0px 0px 3px black;
     width: 20vw;
     height: 30vh;
     background-color: #eeeeee;
@@ -175,7 +173,7 @@
 
 @media screen and (max-width: 1023px) {
 
-    .servicios {
+    .info-servicios__box {
         font-size: 0.8em;
     }
 
@@ -228,10 +226,6 @@
 
 @media  screen and (max-width: 1023px) and (orientation: landscape) {
 
-    .servicios {
-        font-size: 0.7em;
-    }
-
     .portada__servicios .portada-box {
         height: calc(100vh - 50px);
     }
@@ -268,14 +262,6 @@
 } 
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    .info-servicios__card {
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 410px) and (orientation: landscape) {
 
     .info-servicios__card {
         flex-direction: column;
@@ -283,7 +269,7 @@
         height: auto;
     }
 
-    .info-servicios .info {
-        font-size: 0.1em !important;
+    .servicios {
+        font-size: 0.7em;
     }
 }

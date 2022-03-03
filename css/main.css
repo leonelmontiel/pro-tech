@@ -46,7 +46,7 @@
 /* --- BOTONES SERVICIOS --- */
 
 .carousel__servicios {
-    background-color: #eeeeee;
+    background-color: #0077ff;
     padding: 1vh 0;
 }
 
@@ -92,13 +92,13 @@
 }
  
 .carousel__servicios > h2 {
-    color: #00008d;
+    color: #eeeeee;
 }
 
 /* --- VALORACION --- */
 
 .valoracion__box {
-    background: #0000ff;
+    background: #eeeeee;
 }
 
 .valoracion {
@@ -166,6 +166,10 @@
 
     .valoracion {
         width: 60%;
+        height: calc(100vh - 50px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
 }
