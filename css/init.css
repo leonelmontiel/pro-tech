@@ -2,6 +2,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #00008b;
     color: white;
@@ -44,6 +48,13 @@ body {
     .btn__ver-mas {
         font-size: 1.5em;
     }    
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+
+    body {
+        top: 50px !important;
+    }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
