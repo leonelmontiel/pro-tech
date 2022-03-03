@@ -387,3 +387,9 @@
         margin: 0px;
     }    
 }
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .menu-item {
+        margin: 3vh 0 !important;
+    }
+}
