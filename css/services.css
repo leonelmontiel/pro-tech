@@ -209,7 +209,7 @@
 
     .botones__portada .card {
         width: 35vh;
-        height: auto;
+        height: 10vh;
     }
 
     .botones__portada .card__content {
