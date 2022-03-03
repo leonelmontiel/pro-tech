@@ -54,6 +54,7 @@ body {
 
     body {
         top: 50px !important;
+        width: 100vw;
     }
 }
 
